@@ -1,0 +1,46 @@
+/*header*/
+
+@media screen and (max-width: 730px)
+{
+   .menu
+   {
+       display:none;
+   }
+   .responsive_menu
+   {
+       display: block;
+   }
+   .arrow-down
+   {
+       margin-top: 150px;
+   }
+   .slogan
+   {
+        width:150px;
+        height: 200px;
+        margin-top: 50px;
+        font-size: 0.9em;
+        line-height: 20px;
+   }
+   #aside1
+   {
+       margin-top: 50px;
+       flex-direction: column;
+       justify-content: space-around;
+   }
+   figcaption
+   {
+       font-size: 0.9em;
+   }
+   .contact-section1
+   {
+       padding-top: 10px;
+       padding-bottom: 10px;
+       font-size:1em;
+   }
+   .mail img, .phone img
+   {
+       width: 50px;
+       height: 50px;
+   }
+}
