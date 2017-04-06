@@ -1,45 +1,23 @@
 $(function(){
-var toggle = false;
 
-    $('body').fadeOut();
-    // $(window).on('load',function(){
-    // $('#loading').fadeOut();
-    // $('body').fadeIn();
-    // });
+    var src='img/background.jpg';
+    var $img = $( '<img src="' + src + '">' );
+    $img.bind( 'load', function(){
+        $('body').show();
+        $( '#presentation' ).css( 'background-image', 'url(' + src + ')' );
+    } );
+    if( $img[0].width ){ $img.trigger( 'load' ); }
 
-    function imageLoaded() {
+    $('#loading').fadeOut();
+    var toggle = false;
 
-       // function to invoke for loaded image
-       // decrement the counter
-       counter--;
-       if( counter === 0 ) {
-           // counter is 0 which means the last
-           //    one loaded, so do something else
-           new WOW().init();
-           $('#loading').fadeOut();
-           $('body').fadeIn();
-       }
-    }
-    var images = $('img');
-    var counter = images.length;  // initialize the counter
-
-    images.each(function() {
-        if( this.complete ) {
-            imageLoaded.call( this );
-        } else {
-            $(this).one('load', imageLoaded);
+       wow = new WOW(
+        {
+            mobile: false
         }
-    });
+        )
+     wow.init();
 
-
-
-    $('.menu ul li a').mouseover(function(){
-        $('.menu ul li a').parent().css('background', 'none');
-        $(this).parent().css('background-color', 'rgba(182, 182, 182, 0.44)');
-        $(this).mouseout(function(){
-            $(this).parent().css('background', 'none');
-        });
-    })
 
     $('.responsive_menu ul li:nth-child(1n+2)>a').hide();
     $('.toggle').click(function(){

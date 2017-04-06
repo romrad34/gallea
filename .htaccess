@@ -1,0 +1,21 @@
+
+ErrorDocument 404 /gallea/erreur.html
+
+AddDefaultCharset UTF-8
+Options -Indexes +FollowSymlinks
+
+AddType image/x-icon .ico
+AddType text/html .html .htm
+AddType text/css .css
+AddType text/javascript .js
+AddType application/xhtml+xml .xhtml
+AddType application/font-woff2 .woff2
+
+
+<IfModule mod_rewrite.c>
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/$  index.php
+RewriteRule ^mentions-legales$  mentions-legales.php
+</IfModule>

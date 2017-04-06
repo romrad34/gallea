@@ -1,21 +1,55 @@
 /*presentation--------------------------------------------- */
 #presentation
 {
-    background-image: url('../img/background.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    height:100%;
+    position: relative;
+    z-index: 1;
+}
+.arrows
+{
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
+.arrows2
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
 .arrow-down, .arrow-down2
 {
-    height: 4%;
-    min-width: 35px;
-    max-width: 40px;
-    width: 4%;
+    height: 25px;
+    width: 10%;
+    max-width: 70px;
     display: block;
-    margin-top: 100px;
-    margin-left: 49%;
+    cursor: pointer;
+}
+.arrow-up
+{
+    height: 25px;
+    width: 10%;
+    max-width: 70px;
+    display: block;
+    cursor: pointer;
+}
+.arrow-up2
+{
+    height: 25px;
+    width: 10%;
+    max-width: 70px;
+    display: block;
+    margin-top: -120px;
     cursor: pointer;
 }
 #aside1
@@ -25,7 +59,7 @@
      flex-wrap: wrap;
      align-items: center;
      justify-content: space-between;
-     width: 80%;
+     width: 100%;
      height: 30%;
      margin-left: auto;
      margin-right: auto;
@@ -46,7 +80,7 @@
      width:220px;
      height:30%;
      font-family: 'Droid Sans', sans-serif;
-     font-size: calc(1.1em);
+     font-size: 1.1em;
      line-height: 40px;
      border-radius: 50%;
      font-style: italic;
@@ -55,21 +89,25 @@
 
 .frais, .livraison
 {
-     background-color: rgba(210, 122, 46, 0.95);
+    font-size: 1.7em;
+    background-color: rgba(89, 158, 36, 0.84);
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Droid Sans', sans-serif;
-    width: 200px;
+    /*width: 200px;*/
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #2f2f2f, 2px 2px 0px black;
     text-align: center;
     border-radius: 10px;
 }
 /*products-----------------------------------------*/
-#products
+#paniers
 {
     font-family: 'Roboto', sans-serif;
 }
@@ -77,7 +115,7 @@
 h2
 {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(182, 118, 104);
+    background-color: rgb(201, 84, 58);
     margin-top: 20px;
     text-align: center;
     margin: 0 auto;
@@ -86,12 +124,16 @@ h2
 }
 figure
 {
+    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: center ;
     align-items:center  ;
 }
 figure img{
-     min-width: 50px;
+    width: 50%;
+    height: 50%;
+     min-width: 80px;
      max-width: 500px;
 }
 figure:nth-child(1)
@@ -115,25 +157,25 @@ figcaption
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 100%;
+    overflow-y: hidden;
 }
 .contact-section1
 {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    min-height: 500px;
     font-size: 3vw;
     font-weight: bold;
-    margin-top: 125px;
+    margin: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
 }
 .mail, .phone
 {
-
 height: 200px;
 text-align: center;
 color: white;
@@ -144,8 +186,9 @@ flex-direction: column;
 }
 .mail:hover, .phone:hover
 {
-        background-color: rgba(0, 0, 0, 0.67);
+    background-color: rgba(0, 0, 0, 0.67);
 }
-.mail p, .phone p{
+.mail p, .phone p
+{
     margin: 0px;
 }
