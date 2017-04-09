@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
         <title>mentions légales</title>
         <link rel="stylesheet" href="css/mentions-legales.css">
     </head>

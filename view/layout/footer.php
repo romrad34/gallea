@@ -8,7 +8,7 @@
 </script>
 <script type="text/javascript" src="js/transition.js">
 </script>
-<script type="text/javascript" src="js/header.js">
+<script type="text/javascript" src="js/header.js?v=<?= filemtime('js/header.js') ?>">
 </script>
 
 <?php
@@ -17,7 +17,7 @@
         echo '<script type="text/javascript" src="js/wow.min.js"></script>';
     }
 ?>
-<script type="text/javascript" src="js/<?= $js ?>.js"></script>
+<script type="text/javascript" src="js/<?= $js ?>.js?v=<?= filemtime('js/'.$js.'.js') ?>"></script>
 </body>
 
 </html>

@@ -18,7 +18,6 @@ $(function(){
         )
      wow.init();
 
-
     $('.responsive_menu ul li:nth-child(1n+2)>a').hide();
     $('.toggle').click(function(){
         if (toggle===false)

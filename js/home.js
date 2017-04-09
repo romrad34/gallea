@@ -7,9 +7,10 @@ $(function(){
     $('#contact').hide();
 
     //action quand on clique sur la premiere fleche du bas a partir de presentation
-    $('.arrow-down , .menu li:nth-child(2) a, .responsive_menu li:nth-child(3) a ').click(function(){
-
-       wow.init();
+    $('.arrow-down, .menu li:nth-child(2) a, .responsive_menu li:nth-child(3) a ').click(function(){
+        $('.slogan, .livraison, .frais').removeClass('wow');
+        wow.init();
+        $('.slogan').removeClass('wow');
         $('#paniers').show();
         var position = $("#paniers").offset().top;
         $("html, body").animate({ scrollTop:position }, 1500 );
