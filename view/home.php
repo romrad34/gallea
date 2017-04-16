@@ -1,5 +1,5 @@
     <aside class="slogan wow pulse" data-wow-delay="1s" data-wow-duration="2s">
-        <p>Nous sommes <em>grossiste<br>  demi grossiste en fruits<br> et légumes</em>  de producteurs <br>  locaux et épiceries diverses.
+        <p>Nous sommes <em>grossistes<br>  demi-grossistes en fruits<br> et légumes</em>  de producteurs <br>  locaux et épiceries diverses.
         </p>
     </aside>
     <div class="hr">
@@ -13,7 +13,7 @@
 
         <div class="frais wow fadeInUp" data-wow-delay="1s">
             <img src="img/frais.png" width="50" height="50" alt="produits frais">
-            <p>Produits frais <br> directement au producteur <br> au lieu de livraison</p>
+            <p>Produits frais <br> directement du producteur <br> au lieu de livraison</p>
         </div>
     </aside>
     <div class="arrows">
@@ -51,7 +51,7 @@
         <figure>
             <img src="img/panier.jpg" alt="image d'un panier">
             <figcaption>
-                Le panier Familial : 40€ <br>14 - 16 kgs <br>Avec 13 à 15 variétés de fruits et légumes locaux de saison
+                Le panier Familial : 40€ <br>14 - 16 kg <br>Avec 13 à 15 variétés de fruits et légumes locaux de saison
             </figcaption>
         </figure>
     </div>
